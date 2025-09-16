@@ -5,6 +5,7 @@ import jsxA11y from "eslint-plugin-jsx-a11y";
 import reactPlugin from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+import unusedImports from "eslint-plugin-unused-imports";
 import tseslint from "typescript-eslint";
 
 export default defineConfig(
@@ -21,9 +22,9 @@ export default defineConfig(
     },
     plugins: {
       "simple-import-sort": simpleImportSort,
+      "unused-imports": unusedImports,
     },
     rules: {
-      "no-unused-vars": "error",
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/explicit-function-return-type": "error",
       "@typescript-eslint/explicit-module-boundary-types": "error",
@@ -31,6 +32,7 @@ export default defineConfig(
       "react/jsx-uses-react": "off",
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
+      "unused-imports/no-unused-imports": "error",
     },
   },
 
