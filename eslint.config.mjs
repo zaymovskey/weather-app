@@ -19,6 +19,11 @@ export default defineConfig(
   {
     settings: {
       "import/core-modules": ["eslint/config", "typescript-eslint"],
+      "import/resolver": {
+        typescript: {
+          project: "./tsconfig.json",
+        },
+      },
     },
     plugins: {
       "simple-import-sort": simpleImportSort,
