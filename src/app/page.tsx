@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-export default function Page(): ReactElement {
+export default function Home(): ReactElement {
   return (
     <main className="p-6 space-y-6">
       <button className="px-6 py-3 rounded-lg bg-blue-500 text-white hover:bg-blue-600">
